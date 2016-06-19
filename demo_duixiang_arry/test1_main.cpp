@@ -10,10 +10,10 @@
 #include<string.h>
 #include<stdlib.h>
 #include<algorithm>
-#include "Coordinate.cpp" 
+#include "Coordinate.cpp"
 using namespace std;
 const int N = 50086;
- 
+
 int main()
 {
     Coordinate coor[3];
@@ -52,7 +52,7 @@ int main()
         cout << "p_y = " << p->m_iY << endl;
         p--;
     }
-    
+
     p++;
     //delete p; //  不加中括号，只销毁第一个元素, 内存泄漏
     delete[] p;
@@ -62,7 +62,7 @@ int main()
     printf("\nhello\n");
     delete q;
     printf("world\n");
-    
+
     int *w = new int[100];
     delete[] w;
 
